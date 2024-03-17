@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		067AC9AA2BA6798D00DA5241 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 067AC9A92BA6798D00DA5241 /* AppDelegate.m */; };
 		067AC9AD2BA6798D00DA5241 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 067AC9AC2BA6798D00DA5241 /* SceneDelegate.m */; };
-		067AC9B02BA6798D00DA5241 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067AC9AF2BA6798D00DA5241 /* ViewController.m */; };
 		067AC9B32BA6798D00DA5241 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 067AC9B22BA6798D00DA5241 /* Base */; };
 		067AC9B52BA6798D00DA5241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067AC9B42BA6798D00DA5241 /* Assets.xcassets */; };
 		067AC9B82BA6798D00DA5241 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 067AC9B72BA6798D00DA5241 /* Base */; };
 		067AC9BB2BA6798D00DA5241 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 067AC9BA2BA6798D00DA5241 /* main.m */; };
+		067AC9C62BA67A9100DA5241 /* SaveToFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067AC9C52BA67A9100DA5241 /* SaveToFileViewController.m */; };
+		067AC9C92BA67AE700DA5241 /* SaveToUserDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067AC9C82BA67AE700DA5241 /* SaveToUserDefaultsViewController.m */; };
+		067AC9CB2BA67BB000DA5241 /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 067AC9CA2BA67BB000DA5241 /* Robot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +24,17 @@
 		067AC9A92BA6798D00DA5241 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		067AC9AB2BA6798D00DA5241 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		067AC9AC2BA6798D00DA5241 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		067AC9AE2BA6798D00DA5241 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		067AC9AF2BA6798D00DA5241 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		067AC9B22BA6798D00DA5241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		067AC9B42BA6798D00DA5241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		067AC9B72BA6798D00DA5241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		067AC9B92BA6798D00DA5241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		067AC9BA2BA6798D00DA5241 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		067AC9C12BA67A3000DA5241 /* Robot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Robot.h; sourceTree = "<group>"; };
+		067AC9C42BA67A7A00DA5241 /* SaveToFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveToFileViewController.h; sourceTree = "<group>"; };
+		067AC9C52BA67A9100DA5241 /* SaveToFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveToFileViewController.m; sourceTree = "<group>"; };
+		067AC9C72BA67AD900DA5241 /* SaveToUserDefaultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveToUserDefaultsViewController.h; sourceTree = "<group>"; };
+		067AC9C82BA67AE700DA5241 /* SaveToUserDefaultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveToUserDefaultsViewController.m; sourceTree = "<group>"; };
+		067AC9CA2BA67BB000DA5241 /* Robot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Robot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +71,17 @@
 				067AC9A92BA6798D00DA5241 /* AppDelegate.m */,
 				067AC9AB2BA6798D00DA5241 /* SceneDelegate.h */,
 				067AC9AC2BA6798D00DA5241 /* SceneDelegate.m */,
-				067AC9AE2BA6798D00DA5241 /* ViewController.h */,
-				067AC9AF2BA6798D00DA5241 /* ViewController.m */,
 				067AC9B12BA6798D00DA5241 /* Main.storyboard */,
 				067AC9B42BA6798D00DA5241 /* Assets.xcassets */,
 				067AC9B62BA6798D00DA5241 /* LaunchScreen.storyboard */,
 				067AC9B92BA6798D00DA5241 /* Info.plist */,
 				067AC9BA2BA6798D00DA5241 /* main.m */,
+				067AC9C12BA67A3000DA5241 /* Robot.h */,
+				067AC9C42BA67A7A00DA5241 /* SaveToFileViewController.h */,
+				067AC9C52BA67A9100DA5241 /* SaveToFileViewController.m */,
+				067AC9C72BA67AD900DA5241 /* SaveToUserDefaultsViewController.h */,
+				067AC9C82BA67AE700DA5241 /* SaveToUserDefaultsViewController.m */,
+				067AC9CA2BA67BB000DA5241 /* Robot.m */,
 			);
 			path = Homework_6;
 			sourceTree = "<group>";
@@ -146,7 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				067AC9B02BA6798D00DA5241 /* ViewController.m in Sources */,
+				067AC9CB2BA67BB000DA5241 /* Robot.m in Sources */,
+				067AC9C62BA67A9100DA5241 /* SaveToFileViewController.m in Sources */,
+				067AC9C92BA67AE700DA5241 /* SaveToUserDefaultsViewController.m in Sources */,
 				067AC9AA2BA6798D00DA5241 /* AppDelegate.m in Sources */,
 				067AC9BB2BA6798D00DA5241 /* main.m in Sources */,
 				067AC9AD2BA6798D00DA5241 /* SceneDelegate.m in Sources */,

@@ -6,6 +6,8 @@
 //
 
 #import "SceneDelegate.h"
+#import "SaveToFileViewController.h"
+#import "SaveToUserDefaultsViewController.h"
 
 @interface SceneDelegate ()
 
@@ -15,9 +17,23 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    
+    self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
+    
+    UIViewController *saveToUserDefaultsViewController = [[SaveToUserDefaultsViewController alloc] init];
+    UIViewController *saveToFileViewController = [[SaveToFileViewController alloc] init];
+    
+    UINavigationController *saveToUserDefaultsNavigationController = [[UINavigationController alloc] initWithRootViewController:saveToUserDefaultsViewController];
+    UINavigationController *saveToFileNavigationController = [[UINavigationController alloc] initWithRootViewController:saveToFileViewController];
+    
+    saveToUserDefaultsNavigationController.tabBarItem.title = @"saveToUserDefaults";
+    saveToFileNavigationController.tabBarItem.title = @"saveToFile";
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    [tabBarController setViewControllers:@[saveToUserDefaultsNavigationController, saveToFileNavigationController]];
+    
+     self.window.rootViewController = tabBarController;
+     [self.window makeKeyAndVisible];
 }
 
 
